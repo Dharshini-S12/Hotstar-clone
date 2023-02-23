@@ -10,86 +10,307 @@ body{
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
 }
+/*navigation*/
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 4%;
+    background: #0c111b;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo{
+    height: 45px;
+    width: 115px;
+    background: black;
+
+}
+   
+.nav-links{
+    margin-top: 10px;
+    display: flex;
+    list-style: none;
+}
+
+.nav-items a{
+    text-decoration: none;
+    margin-left: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.right-container{
+    display: block;
+    margin-left: auto;
+}
+
+.search-box{
+    border: none;
+    border-bottom: 1px solid #aaa;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    width: 250px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    transform: 0.5s;
+}
+
+.search-box:focus{
+    width: 400px;
+    border-color: #1f80e0;
+}
+
+.sub-btn{
+    background: #1f80e0;
+    height: 30px;
+    padding: 0 20px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.login-link{
+    color: #fff;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+}
+/*navigation*/
+
+/*caraousel*/
+
+.caraousel-container{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    padding: 20px 0;
+    overflow-x: hidden;
+    margin-top: 80px;
+}
+
+.caraousel{
+    display: flex;
+    width: 92%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    background: black;
+}
+
+.slider1{
+    flex: 0 0 auto;
+    margin-right: 30px;
+    position: relative;
+    background: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.slider1 img{
+    width: 70%;
+    min-height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+}
+
+img {
+    vertical-align: middle;
+
+}
+
+
+.slider1-content{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(to right, #030b17 80%,#0c111b00);
+    color: #fff;
+    
+
+}
+
+.mySlides {
+    display: none
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 1px;
+    margin-top: -30px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+
+.movie-title{
+    padding-left: 50px;
+    margin-top: 80px;
+}
+.movie-des{
+    width: 80%;
+    line-height: 30px;
+    padding-left: 50px;
+    margin-top: 30px;
+    font-size: 15px;
+    opacity: 0.8;
+}
+/*caraousel*/
+
 /*card carousel*/
 .title{
    
     color: #fff;
     opacity: 0.9;
     text-transform: capitalize;
-    font-size: 22px;
+    /*font-size: 20px;
+    font-weight: 400;*/
+    text-decoration: none;
+    padding: 0 50px;
+
+
     font-weight: 500;
-}
-.movies-list{
+    font-size: 20px;
+ }
+ .movies-list{
     width: 100%;
     height: 220px;
     position: relative;
     margin: 10 px 0 20px;
     padding: 50%;
-}
-.card-container{
-    position: absolute;
-    width: 92%;
-    padding-left: 40px;
-    padding: 4%;
-    height: 220px;
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    overflow-x: auto;
-    overflow-y: visible;
-    scroll-behavior: smooth;
-}
-.card-container::-webkit-scrollbar{
-    display: none;
-}
-.card{
-    position: relative;
-    min-width: 150px;
-    width: 150px;
-    height: 200px;
-    border-radius: 5px;
-    overflow: hidden;
-    margin-right: 10px;
-    transition: .5s;
-}
-.card-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.card:hover{
-    transform: scale(1.1);
-}
-.pre-btn,
-.nxt-btn{
-    position: absolute;
-    top:0;
-    width: 5%;
-    height: 100%;
-    z-index: 2;
-    border: none;
-    cursor: pointer;
-    outline: none;
-}
-.pre-btn{
-    left: 0;
-    background: linear-gradient(to right, #0c111b 0%,#0c111b00);
-}
-.nxt-btn{
-    right: 0;
-    background: linear-gradient(to left, #0c111b 0%,#0c111b00);
-}
-.pre-btn img,
-.nxt-btn img{
-    width: 15px;
-    height: 20px;
-    opacity: 0;
-
-}
-.pre-btn:hover img,
-.nxt-btn:hover img{
-    opacity: 1;
-}
+ }
+ 
+ .card-container{
+  width: 100%;
+  height: 220px;
+  position:absolute;
+  display:flex;
+  margin-left: 20px;
+  background-color: black;
+ }
+ 
+ .slider{
+  margin: 0 40px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+ }
+ 
+ .slider .image-items{
+  height: 100%;
+ }
+ 
+ .slider .image-items .image{
+  height: 100%;
+  transition: .5s;
+ }
+ 
+ .slider .image-items .image img{
+  height: 100%;
+  display: block;
+  width: 95%;
+  object-fit: cover;
+  border-radius: 10px;
+ }
+ .slider .image-items .image:hover{
+     transform: scale(1.1);
+ }
+ 
+ 
+ .arrowButton{
+  position: absolute;
+  top: 50% ;
+  color: white !important;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50% !important;
+  background-color: black !important;
+  padding: 10px !important;
+ }
+ 
+ .arrowButton.left{
+  left: 0 !important;
+ }
+ 
+ .arrowButton.right{
+  right: 0 !important;
+ }
+ 
+ .arrowButton::after{
+  font-size: 20px !important;
+ }
+ 
+ @media only screen and (max-width:868px){
+  .slider{
+      margin: 0 20px;
+  }
+ }
 /*card carousel*/
 
 /*footer*/
