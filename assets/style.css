@@ -92,6 +92,43 @@ body{
     font-weight: 700;
     text-decoration: none;
 }
+
+.drpbtn{
+    background-color: #030b17;
+    color: #030b17;
+    cursor: progress;
+    font-size: 16px;
+    border: none;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #030b17;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+    z-index: 1;
+}
+.dropdown-content a{
+    color: #ccc;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: #030b17;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown:hover .drpbtn{
+    background-color: #030b17;
+}
+
+
 /*navigation*/
 
 /*caraousel*/
@@ -126,6 +163,7 @@ body{
     transition: 1s;
     overflow: hidden;
 }
+
 
 .slider1 img{
     width: 70%;
