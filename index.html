@@ -93,10 +93,64 @@
       </ul>
       <div class="right-container">
         <input type="text" class="search-box" placeholder="Search">
-        <button class="sub-btn">Subscribe</button> 
-        <a href="#" class="login-link">Login</a>
-  
+        <button class="sub-btn">Subscribe</button></div>
+        <!--login-->
+        <!--a href="#" class="button">login</a-->
+        <!--new login-->
+        
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        
+        <div id="id01" class="modal">
+          
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+             
+            </div>
+        
+            <div class="container">
+              <h2>Login to continue</h2>
+              <form method="post">
+              <div class="txt_field">
+              <input type="text" placeholder="Enter Username"  required>
+                 <span></span>
+              
+              </div>
+              <div class="txt_field">
+              <input type="password"placeholder="Enter Password" required> 
+                 <span></span>
+              
+              </div>
+              <div class="pass">Forget Password?</div>
+              <input type="Submit" value="Login">
+              
+              </form>
+            </div>
+        
+          </form>
+        </div>
+        
+        <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+        
+
+        
+
+        <!--new login-->
+        
+
+       <!--login-->
     </nav>
+    
     <!--navigation-->
   
     <!--caraousel-->
