@@ -14,22 +14,137 @@
     <body>
      
      <!--navigation-->
-      <nav class="navbar">
+
+     <nav class="navbar">
       <img src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg" alt="" class="brand-logo">
-  
       <ul class="nav-links">
-           <li class="nav-items"><a href="/index.html">Tv</a></li>
-           <li class="nav-items"><a href="#">Movies</a></li>
-           <li class="nav-items"><a href="#">Sports</a></li>
-           <li class="nav-items"><a href="#">Kids</a></li>
-           <li class="nav-items"><a href="#">Premium</a></li>
+        <!--1st-->
+        <div class="dropdown">
+           <li class="dropbtn"><li class="nav-items"><a href="/pages/tv.html">Tv</a></li></li>
+           <div class="dropdown-content">
+             <a herf ="#">Celebrating women</a>
+             <a herf ="#">StarPlus</a>
+             <a herf ="#">Hotstar specials</a>
+             <a herf ="#">Star Bharath</a>
+             <a herf ="#">Star Vijay</a>
+             <a herf ="#">Star Maa</a>
+             <a herf ="#">Star Jalsha</a>
+             <a herf ="#">Star Pravah</a>
+           </div>
+          </div>
+          <!--1st-->
+
+          <!--2nd-->
+          <div class="dropdown">
+            <li class="dropbtn"><li class="nav-items"><a href="#">Movies</a></li></li>
+           <div class="dropdown-content">
+            <a herf ="#">Hindi</a>
+            <a herf ="#">English</a>
+            <a herf ="#">Tamil</a>
+            <a herf ="#">Telugu</a>
+            <a herf ="#">Bengali</a>
+            <a herf ="#">Marathi</a>
+            <a herf ="#">Kannada</a>
+            <a herf ="#">Malayam</a>
+          </div>
+         </div>
+          <!--2nd-->
+          
+          <!--3rd-->
+          <div class="dropdown">
+            <li class="dropbtn"><li class="nav-items"><a href="#">Sports</a></li></li>
+           <div class="dropdown-content">
+            <a herf ="#">Cricket</a>
+            <a herf ="#">FootBall</a>
+            <a herf ="#">Hockey</a>
+            <a herf ="#">Kabaddi</a>
+            <a herf ="#">Tennis</a>
+            <a herf ="#">Khelo India</a>
+            <a herf ="#">American FootBall</a>
+            <a herf ="#">Athletics</a>
+          </div>
+         </div>
+          <!--3rd-->
+
+           <!--4th-->
+           <div class="dropdown">
+            <li class="dropbtn"><li class="nav-items"><a href="#">Kids</a></li></li>
+           <div class="dropdown-content">
+            <a herf ="#">Cartoon</a>
+            <a herf ="#">Chota Beem</a>
+            <a herf ="#">Dora</a>
+            <a herf ="#">Ben Ten</a>
+            <a herf ="#">Spider Man</a>
+            <a herf ="#">Hidi</a>
+            <a herf ="#">The Cinderlla</a>
+          </div>
+         </div>
+            <!--4th-->
+
+            <!--5th-->
+            <div class="dropdown">
+              <li class="dropbtn"><li class="nav-items"><a href="#">Premium</a></li></li>
+           <div class="dropdown-content">
+            <a herf ="#">Languages</a>
+            <a herf ="#">Channels</a>
+          </div>
+         </div>
+            <!--5th-->
       </ul>
       <div class="right-container">
-        <input type="text" class="search-box" placeholder="Search">
-        <button class="sub-btn">Subscribe</button> 
-        <a href="#" class="login-link">Login</a>
+        <input type="search" class="search-box" placeholder="Search">
+        <button class="sub-btn">Subscribe</button>
+      
+ <!--login-->
+    
+          <a href="#" id="button1" class="button1">login</a>
+   <div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <!--p>Some text in the Modal..</p-->
+    <h2>Login to continue</h2>
+    <div class="container">
+              <!--h2>Login to continue</h2-->
+              <form method="post">
+              <div class="txt_field">
+              <input type="text" placeholder="Enter Username"  required>
+                 <span></span>
+              
+              </div>
+              <div class="txt_field">
+              <input type="password"placeholder="Enter Password" required> 
+                 <span></span>
+              
+              </div>
+              <div class="pass">Forget Password?</div>
+              <input type="Submit" value="Login">
+              
+              </form>
+    </div>
+  </div>
+
+</div>
       </div>
+
+<script>
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("button1");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+       <!--login-->
     </nav>
+    
     <!--navigation-->
   
     <!--caraousel-->
@@ -424,12 +539,12 @@
     <div class="container">
       <div class="footermenu">
        <div class="menu">
-        <span> About Disney+Hotstar</span>
-        <span> Terms Of use</span>
-        <span> Privacy Policy</span>
-        <span> FAQ</span>
-        <span> Feedback</span>
-        <span> Careers</span>
+        <ul class="nav-items"><a href="/pages/about.html"> About Disney+Hotstar</a></ul>
+        <a><span> Terms Of use</span></a>
+        <a><span> Privacy Policy</span></a>
+        <a><span> FAQ</span></a>
+        <a><span> Feedback</span></a>
+        <a><span> Careers</span></a>
        </div><br>
         <p class="footerp"> © 2023 STAR. All Rights Reserved. HBO, Home Box Office and related channel and programming logos are service marks of, and 
             all related programming visuals and elements are the property of, Home Box Office, Inc.All rights reserved
@@ -448,8 +563,6 @@
        </div>
     </div>
     <!--footer-->
-    
-
 
   </body>
 </html>
