@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Disney+Clone</title>
-    <link rel="stylesheet" href="/assets/style.css"/>
+    <link rel="stylesheet" href="./assets/style.css"/>
     <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -92,24 +92,19 @@
             <!--5th-->
       </ul>
       <div class="right-container">
-        <input type="text" class="search-box" placeholder="Search">
-        <button class="sub-btn">Subscribe</button></div>
-        <!--login-->
-        <!--a href="#" class="button">login</a-->
-        <!--new login-->
-        
-        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-        
-        <div id="id01" class="modal">
-          
-          <form class="modal-content animate" action="/action_page.php" method="post">
-            <div class="imgcontainer">
-              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-             
-            </div>
-        
-            <div class="container">
-              <h2>Login to continue</h2>
+        <input type="search" class="search-box" placeholder="Search">
+        <button class="sub-btn">Subscribe</button>
+      
+ <!--login-->
+    
+          <a href="#" id="button1" class="button1">login</a>
+   <div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <!--p>Some text in the Modal..</p-->
+    <h2>Login to continue</h2>
+    <div class="container">
+              <!--h2>Login to continue</h2-->
               <form method="post">
               <div class="txt_field">
               <input type="text" placeholder="Enter Username"  required>
@@ -125,29 +120,28 @@
               <input type="Submit" value="Login">
               
               </form>
-            </div>
-        
-          </form>
-        </div>
-        
-        <script>
-        // Get the modal
-        var modal = document.getElementById('id01');
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-        </script>
-        
+    </div>
+  </div>
 
-        
+</div>
+      </div>
 
-        <!--new login-->
-        
-
+<script>
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("button1");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
        <!--login-->
     </nav>
     
@@ -550,12 +544,12 @@
     <div class="container">
       <div class="footermenu">
        <div class="menu">
-        <span> About Disney+Hotstar</span>
-        <span> Terms Of use</span>
-        <span> Privacy Policy</span>
-        <span> FAQ</span>
-        <span> Feedback</span>
-        <span> Careers</span>
+        <button><ul class="nav-items"><a href="/pages/about.html"> About Disney+Hotstar</a></button></ul>
+        <button><span> Terms Of use</span></button>
+        <button><span> Privacy Policy</span></button>
+        <button><span> FAQ</span></button>
+        <button><span> Feedback</span></button>
+        <button><span> Careers</span></button>
        </div><br>
         <p class="footerp"> © 2023 STAR. All Rights Reserved. HBO, Home Box Office and related channel and programming logos are service marks of, and 
             all related programming visuals and elements are the property of, Home Box Office, Inc.All rights reserved
