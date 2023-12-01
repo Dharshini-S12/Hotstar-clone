@@ -17,5 +17,5 @@ This project is developed as a learning exercise.
 
 
 ## Deploy At:
-- Verasl:
+- Vercel:
        https://hotstarclone-phi.vercel.app/
